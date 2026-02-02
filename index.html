@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コミュニティ運営団体 R.L.A. 公式サイト</title>
+    <style>
+        :root {
+            --primary-color: #1a2a44; /* 藍色 */
+            --accent-color: #00aaff;  /* スカイブルー */
+            --text-color: #333;
+            --bg-color: #f4f7f9;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .catchphrase {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="コミュニティ運営団体 R.L.A. ロゴ" class="logo">
+</header>
+
+<div class="container">
+
+    <section id="top">
+        <p class="catchphrase">「仮想世界に、新しい放課後を。」</p>
+        <p>私たち「コミュニティ運営団体 R.L.A.」は、DiscordとRobloxという2つのプラットフォームを軸に、次世代のバーチャルコミュニティを創造・運営する組織です。</p>
+        <p>学び、遊び、そして夢を追いかける場所。リアルでは味わえない「もう一つの日常」が、ここにはあります。</p>
+    </section>
+
+    <section id="about">
+        <h2>団体概要 | About Us</h2>
+        <p><strong>「個性が響き合う、プラットフォームの架け橋に」</strong></p>
+        <p>R.L.A.は、Discordコミュニティサーバー「藍空学園高等学校・中学校」と、Roblox芸能プロダクション「STUDIO UP-NEXT」を統括する運営母体です。</p>
+        <p>私たちのミッションは、バーチャル空間における「安全で、熱狂できる場所」の提供です。単なるプラットフォームの運営に留まらず、人と人が繋がり、新しい才能が開花する環境をプロデュースしています。</p>
+    </section>
+
+    <section id="services">
+        <h2>事業紹介 | Services</h2>
+        
+        <div class="service-card">
+            <h3>■ 藍空学園高等学校・中学校</h3>
+            <p>Discordを拠点とした、参加型学園ロールプレイング・コミュニティ。生徒一人ひとりが自分の役割を持ち、オンラインならではの「学校生活」を謳歌します。</p>
+        </div>
+
+        <div class="service-card">
+            <h3>■ STUDIO UP-NEXT</h3>
+            <p>Robloxの世界で展開する、本格的な芸能プロダクション。アイドル、モデル、クリエイターの育成から、ライブステージの企画・演出までをトータルプロデュースします。</p>
+        </div>
+    </section>
+
+    <section id="links" style="text-align: center;">
+        <h2>Join Our Community</h2>
+        <p>R.L.A.の活動に興味をお持ちの方、共に歩んでくださる方を募集しています。</p>
+        <div class="btn-container">
+            <a href="message.html" class="btn btn-primary">参加を検討されている皆様へ</a>
+            <a href="safety.html" class="btn btn-primary">運営ポリシーと安全への取り組み</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <div style="margin-bottom: 20px;">
+        <a href="index.html" style="color: #fff; margin: 0 10px; text-decoration: none;">ホーム</a>
+        <a href="safety.html" style="color: #fff; margin: 0 10px; text-decoration: none;">安全への取り組み</a>
+        <a href="terms.html" style="color: #fff; margin: 0 10px; text-decoration: none;">利用規約</a>
+        <a href="privacy.html" style="color: #fff; margin: 0 10px; text-decoration: none;">個人情報保護方針</a>
+        <a href="contact.html" style="color: #fff; margin: 0 10px; text-decoration: none;">お問い合わせ</a>
+    </div>
+    <p>&copy; 2026 コミュニティ運営団体 R.L.A. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
