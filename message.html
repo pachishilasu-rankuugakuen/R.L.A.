@@ -6,7 +6,7 @@
     <title>参加を検討されている皆様へ - コミュニティ運営団体 R.L.A.</title>
     <style>
         :root {
-            --primary-color: #1a2a44;
+            --primary-color: #1a2a44; /* R.L.A. ネイビー */
             --accent-color: #00aaff;
             --discord-color: #5865F2;
             --roblox-color: #000000;
@@ -31,7 +31,7 @@
         .logo { max-width: 180px; height: auto; }
 
         .container {
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 60px 20px;
         }
@@ -55,52 +55,62 @@
             margin-bottom: 30px;
         }
 
-        /* 参加リンクエリアのデザイン */
+        /* 3つの参加タイプ：グリッドレイアウト */
         .join-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
             margin-top: 40px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 850px) {
             .join-container { grid-template-columns: 1fr; }
         }
 
         .join-card {
-            padding: 30px;
+            padding: 25px 15px;
             border-radius: 15px;
             text-align: center;
             color: #fff;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .join-card:hover { transform: translateY(-5px); }
 
         .bg-discord { background-color: var(--discord-color); }
         .bg-roblox { background-color: var(--roblox-color); }
+        .bg-rla { background-color: var(--primary-color); }
 
         .btn-link {
             display: inline-block;
             background: #fff;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
         }
 
         .bg-discord .btn-link { color: var(--discord-color); }
         .bg-roblox .btn-link { color: var(--roblox-color); }
+        .bg-rla .btn-link { color: var(--primary-color); }
 
+        /* フッタースタイル（画像のデザインに統合） */
         footer {
-            margin-top: 80px;
             background-color: var(--primary-color);
-            color: #fff;
+            color: #ffffff;
             text-align: center;
             padding: 40px 20px;
+            margin-top: 60px;
         }
-        footer a { color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem; }
+        .footer-links { margin-bottom: 25px; }
+        .footer-links a { color: #ffffff; margin: 0 15px; text-decoration: none; font-size: 0.95rem; }
+        .footer-links a:hover { text-decoration: underline; }
+        .copyright { font-size: 0.85rem; opacity: 0.8; }
     </style>
 </head>
 <body>
@@ -114,26 +124,37 @@
         <h1>参加を検討されている皆様へ</h1>
         <p class="lead-text">「仮想世界に、もう一つの居場所と、夢を追いかけるステージを。」</p>
         
-        <p>R.L.A.が運営する各プロジェクトへの入り口は以下になります。あなたの目的に合わせて、新しい世界へ飛び込んでみてください。</p>
+        <p>R.L.A.は、あなたの「なりたい自分」を応援する場所です。現在、以下の3つの窓口から参加を受け付けています。あなたの目的に合った入り口を選んでください。</p>
 
         <div class="join-container">
             <div class="join-card bg-discord">
-                <h3>藍空学園への参加</h3>
-                <p style="font-size: 0.9rem;">交流・学生生活RPを楽しみたい方はこちら</p>
-                <a href="https://discord.gg/FGM3BwWWHW" class="btn-link">Discordサーバーへ</a>
+                <div>
+                    <h3>藍空学園</h3>
+                    <p style="font-size: 0.85rem;">学生生活ロールプレイや<br>日々の交流を楽しみたい方</p>
+                </div>
+                <a href="https://discord.gg/YOUR_INVITE_CODE" class="btn-link">Discordに参加</a>
             </div>
 
             <div class="join-card bg-roblox">
-                <h3>STUDIO UP-NEXT</h3>
-                <p style="font-size: 0.9rem;">芸能活動・制作に興味がある方はこちら</p>
-                <a href="https://discord.gg/ShMUtBstcu" class="btn-link">STUDIO UP-NEXTサーバーへ</a>
+                <div>
+                    <h3>UP-NEXT</h3>
+                    <p style="font-size: 0.85rem;">Robloxでの芸能活動や<br>制作・表現に挑戦したい方</p>
+                </div>
+                <a href="https://www.roblox.com/groups/YOUR_GROUP_ID" class="btn-link">Robloxグループへ</a>
+            </div>
+
+            <div class="join-card bg-rla">
+                <div>
+                    <h3>R.L.A. 団体参加</h3>
+                    <p style="font-size: 0.85rem;">運営・広報・技術支援など<br>団体を支えたい方はこちら</p>
+                </div>
+                <a href="contact.html" class="btn-link">お問い合わせへ</a>
             </div>
         </div>
 
-        <p style="margin-top: 40px; font-size: 0.9rem; color: #666; text-align: center;">
-            ※どちらから参加しても、メンバーとして歓迎いたします。<br>
-            ※活動の詳細は各プラットフォーム内の告知をご確認ください。
-        </p>
+        <h2>私たちが大切にしていること</h2>
+        <p>「自由」には「責任」が伴います。R.L.A.は厳しいルールで縛る場所ではありませんが、お互いを尊重し、思いやる心を最も大切にしています。</p>
+        <p>現実世界の肩書きや年齢に関係なく、新しい自分として一歩踏み出せる。そんな健全で温かい環境を、運営スタッフとメンバー全員で守り続けています。</p>
     </div>
 </div>
 
@@ -145,7 +166,7 @@
         <a href="privacy.html">個人情報保護方針</a>
         <a href="contact.html">お問い合わせ</a>
     </div>
-    <p>&copy; 2026 コミュニティ運営団体 R.L.A. All Rights Reserved.</p>
+    <p class="copyright">&copy; 2026 コミュニティ運営団体 R.L.A. All Rights Reserved.</p>
 </footer>
 
 </body>
